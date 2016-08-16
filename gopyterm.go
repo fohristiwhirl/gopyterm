@@ -10,6 +10,8 @@ import (
     "runtime"
 )
 
+const RENDERER = "pygame_renderer.py"
+
 var stdout_chan = make(chan string)
 
 var stdin_pipe io.WriteCloser
@@ -69,7 +71,7 @@ func Start(width int, height int) error {
 
     _, filename, _, _ := runtime.Caller(0)
     dir := filepath.Dir(filename)
-    renderer := filepath.Join(dir, "wender.py")
+    renderer := filepath.Join(dir, RENDERER)
     charfile := filepath.Join(dir, "chars8x12.png")
 
     exec_command := exec.Command(
