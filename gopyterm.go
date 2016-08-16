@@ -44,7 +44,7 @@ func Char(c byte, x int32, y int32, colour string) error {
         return fmt.Errorf("send_line(): character was > 127")
     }
 
-    _, err := fmt.Fprintf(stdin_pipe, "%d %d %d red\n", c, x, y)
+    _, err := fmt.Fprintf(stdin_pipe, "%d %d %d %s\n", c, x, y, colour)
     if err != nil {
         return fmt.Errorf("Char(): %v", err)
     }

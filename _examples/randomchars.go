@@ -18,7 +18,7 @@ func main() {
             x := rand.Int31n(80)
             y := rand.Int31n(40)
 
-            term.Char(c, x, y, "red")
+            term.Char(c, x, y, "random")
         }
 
         term.Draw()

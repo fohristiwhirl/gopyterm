@@ -51,7 +51,10 @@ class MainWindow():
 
 		sprite = self._sprites_list[val]
 		if colour not in sprite.colours:
-			colour = "white"
+			if colour == "random":
+				colour = random.choice(list(sprite.colours))
+			else:
+				colour = "white"
 
 		self._surface.blit(sprite.colours[colour], (screenx, screeny))
 
