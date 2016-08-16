@@ -10,14 +10,14 @@ class CharSprite():
 		self.height = surface.get_height()
 		self.base = surface
 		self.colours = {
-			"black" : colourise_surface(self.base, pygame.Color("black"))				,
-			"white" : colourise_surface(self.base, pygame.Color("white"))				,
-			"gray" : colourise_surface(self.base, pygame.Color(192,192,192,255))		,
-			"red" : colourise_surface(self.base, pygame.Color("red"))					,
-			"green" : colourise_surface(self.base, pygame.Color("green"))				,
-			"yellow" : colourise_surface(self.base, pygame.Color("yellow"))				,
-			"blue" : colourise_surface(self.base, pygame.Color("blue"))					,
-			"cyan" : colourise_surface(self.base, pygame.Color("cyan"))					,
+			"black" : colourise_surface(self.base, pygame.Color("black")),
+			"white" : colourise_surface(self.base, pygame.Color("white")),
+			"gray" : colourise_surface(self.base, pygame.Color(192,192,192,255)),
+			"red" : colourise_surface(self.base, pygame.Color("red")),
+			"green" : colourise_surface(self.base, pygame.Color("green")),
+			"yellow" : colourise_surface(self.base, pygame.Color("yellow")),
+			"blue" : colourise_surface(self.base, pygame.Color("blue")),
+			"cyan" : colourise_surface(self.base, pygame.Color("cyan")),
 			"orange" : colourise_surface(self.base, pygame.Color("orange"))
 			}
 
