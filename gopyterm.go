@@ -10,7 +10,7 @@ import (
     "runtime"
 )
 
-const RENDERER = "pygame_renderer.py"
+const RENDERER = "pygame_console.py"
 
 var stdout_chan = make(chan string)
 
