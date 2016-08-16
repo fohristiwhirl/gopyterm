@@ -59,7 +59,7 @@ func Draw() error {
         return fmt.Errorf("Draw(): %v", err)
     }
 
-    <- stdout_chan
+    <- stdout_chan  // The renderer needs to send something on Stdout after each DRAW command
 
     return nil
 }
